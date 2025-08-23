@@ -72,10 +72,6 @@ export default function BonusSection() {
               className="bg-white rounded-2xl overflow-hidden shadow-xl recipe-card border-2 border-yellow-400/30 relative"
               data-testid={`bonus-card-${index}`}
             >
-              {/* FREE badge */}
-              <div className="absolute -top-3 -right-3 bg-gradient-to-r from-alert-red to-orange-500 text-white px-4 py-2 rounded-full font-bold text-sm z-10 shadow-lg">
-                GRÁTIS
-              </div>
               
               <img 
                 src={bonus.image} 
@@ -140,11 +136,14 @@ export default function BonusSection() {
           
           <Button 
             onClick={scrollToOffer}
-            className="cta-button text-lg px-12 py-6"
+            className="cta-button text-base md:text-lg px-12 py-6 h-auto"
             data-testid="button-bonus-cta"
           >
             <Gift className="w-6 h-6 mr-3" />
-            QUERO TODOS OS BÔNUS GRÁTIS
+            <span className="flex flex-col leading-tight">
+              <span>QUERO TODOS OS</span>
+              <span className="text-lg md:text-xl">BÔNUS GRÁTIS</span>
+            </span>
           </Button>
         </div>
       </div>
