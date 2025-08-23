@@ -105,35 +105,7 @@ export default function BonusSection() {
           ))}
         </div>
         
-        {/* Total value emphasis */}
         <div className="text-center mt-12">
-          <div className="bg-white rounded-2xl p-8 shadow-xl max-w-2xl mx-auto border-4 border-yellow-400 mb-8">
-            <div className="flex items-center justify-center mb-4">
-              <Star className="w-8 h-8 text-yellow-500 mr-2" />
-              <h3 className="text-2xl md:text-3xl font-bold text-text-primary">Resumo da Oferta</h3>
-              <Star className="w-8 h-8 text-yellow-500 ml-2" />
-            </div>
-            
-            <div className="space-y-3 text-lg">
-              <div className="flex justify-between items-center">
-                <span>Cardápio da Nutri (200 Receitas)</span>
-                <span className="font-semibold">R$24,90</span>
-              </div>
-              <div className="flex justify-between items-center text-dark-green">
-                <span>3 Bônus Exclusivos</span>
-                <span className="font-bold">GRÁTIS</span>
-              </div>
-              <hr className="border-gray-300" />
-              <div className="flex justify-between items-center text-xl font-bold">
-                <span>Total que você paga:</span>
-                <span className="text-alert-red">R$24,90</span>
-              </div>
-              <div className="text-sm text-text-secondary">
-                (Economia de R$64,70 nos bônus!)
-              </div>
-            </div>
-          </div>
-          
           <Button 
             onClick={scrollToOffer}
             className="cta-button text-base md:text-lg px-12 py-6 h-auto"
