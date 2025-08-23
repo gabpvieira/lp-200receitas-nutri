@@ -65,10 +65,10 @@ export default function OfferSection() {
                     De R$49,90
                   </p>
                   <div className="flex items-baseline justify-center md:justify-start mb-2">
-                    <span className="text-4xl md:text-6xl font-black text-alert-red" data-testid="text-sale-price">
+                    <span className="text-6xl md:text-8xl font-black text-alert-red" data-testid="text-sale-price">
                       R$24
                     </span>
-                    <span className="text-xl md:text-2xl font-bold text-alert-red">,90</span>
+                    <span className="text-3xl md:text-4xl font-bold text-alert-red">,90</span>
                   </div>
                   <p className="text-sm text-text-secondary mb-2">à vista</p>
                   <div className="inline-block bg-dark-green text-white px-3 py-1 rounded-full text-sm font-semibold" data-testid="text-installment">
@@ -99,11 +99,11 @@ export default function OfferSection() {
                 {/* CTA Button */}
                 <Button 
                   onClick={handlePurchase}
-                  className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-sm md:text-lg py-4 md:py-6 px-4 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105 animate-pulse"
+                  className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-sm md:text-lg py-4 md:py-6 px-4 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
                   data-testid="button-purchase"
                 >
                   <ShoppingCart className="w-5 h-5 mr-2" />
-                  QUERO TRANSFORMAR MEUS CAFÉS AGORA
+                  COMPRAR AGORA
                 </Button>
                 
                 {/* Payment Methods */}
