@@ -111,7 +111,7 @@ export default function OfferSection() {
                   <img 
                     src="https://cdn.awsli.com.br/1845/1845902/arquivos/jdbstpx.png" 
                     alt="Mercado Pago - Pagamento Seguro" 
-                    className="h-6 md:h-8 mx-auto"
+                    className="h-12 md:h-16 mx-auto"
                     data-testid="img-payment-logo"
                   />
                   
