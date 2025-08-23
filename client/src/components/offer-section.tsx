@@ -99,10 +99,10 @@ export default function OfferSection() {
                 {/* CTA Button */}
                 <Button 
                   onClick={handlePurchase}
-                  className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-sm md:text-lg py-4 md:py-6 px-4 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
+                  className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-xl md:text-2xl py-6 md:py-8 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
                   data-testid="button-purchase"
                 >
-                  <ShoppingCart className="w-5 h-5 mr-2" />
+                  <ShoppingCart className="w-7 h-7 mr-3" />
                   COMPRAR AGORA
                 </Button>
                 
