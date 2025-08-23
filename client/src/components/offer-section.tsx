@@ -23,7 +23,7 @@ export default function OfferSection() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <img 
-                  src="https://nucleosaudavel.com/wp-content/uploads/2025/08/mockup.webp" 
+                  src="https://nucleosaudavel.com/wp-content/uploads/2025/08/MOCKUP.png" 
                   alt="Cardápio da Nutri - Mockup do produto" 
                   className="w-full max-w-sm mx-auto"
                   data-testid="img-product-mockup"
