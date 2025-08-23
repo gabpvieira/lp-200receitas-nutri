@@ -104,48 +104,6 @@ export default function AdvantagesSection() {
             </div>
           ))}
           
-          {/* Special highlight card */}
-          <div className="md:col-span-2 lg:col-span-3 bg-gradient-to-r from-primary-green to-dark-green rounded-3xl p-6 md:p-8 text-white shadow-2xl">
-            <div className="flex flex-col md:flex-row items-center justify-between">
-              <div className="text-center md:text-left mb-6 md:mb-0">
-                <h3 className="text-2xl md:text-3xl font-bold mb-2">
-                  🎯 Resultado Garantido
-                </h3>
-                <p className="text-lg opacity-90">
-                  Mais de 5.000 pessoas já transformaram seus cafés da manhã com nosso método
-                </p>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl md:text-5xl font-black text-yellow-300 mb-2">
-                  +5.000
-                </div>
-                <div className="text-sm opacity-80">
-                  Clientes satisfeitos
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        {/* CTA Section */}
-        <div className="text-center">
-          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-xl max-w-2xl mx-auto mb-8 border-2 border-primary-green/20">
-            <h3 className="text-2xl md:text-3xl font-bold text-text-primary mb-4">
-              Pronto para transformar seus cafés da manhã?
-            </h3>
-            <p className="text-text-secondary mb-6">
-              Junte-se às milhares de pessoas que já conquistaram uma rotina mais saudável e saborosa
-            </p>
-            
-            <Button 
-              onClick={scrollToOffer}
-              className="cta-button text-lg md:text-xl px-12 py-6"
-              data-testid="button-advantages-cta"
-            >
-              <Zap className="w-6 h-6 mr-3" />
-              SIM, QUERO TODAS ESSAS VANTAGENS
-            </Button>
-          </div>
         </div>
       </div>
     </section>
