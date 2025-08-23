@@ -10,7 +10,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="bg-gradient-to-br from-primary-green via-dark-green to-primary-green text-white relative overflow-hidden min-h-screen">
+    <section className="hero-section bg-gradient-to-br from-primary-green via-dark-green to-primary-green text-white relative overflow-hidden min-h-screen">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-to-br from-primary-green/95 to-dark-green/95"></div>
       <div className="absolute top-0 left-0 w-full h-full opacity-20">
