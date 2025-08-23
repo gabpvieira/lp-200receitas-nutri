@@ -1,0 +1,184 @@
+Crie uma landing page completa em **HTML + CSS puro**, responsiva e premium minimalista, para vender o produto **Cardápio da Nutri: 200 Receitas de Café da Manhã (Com Sabor)**.
+
+---
+
+⚡ REGRAS GLOBAIS:
+- Fonte global: **Poppins** (Google Fonts)
+- Paleta de cores:
+  - Verde principal (background de blocos): `#6b8e5c`
+  - Verde escuro (botões, títulos): `#2e7d32`
+  - Vermelho para preço à vista: `#d32f2f`
+  - Texto principal: `#222`
+  - Texto secundário: `#555`
+- Botões CTA:
+  - Cor verde escuro `#2e7d32`
+  - Texto branco, bold
+  - Borda arredondada (`border-radius: 50px`)
+  - Sombra leve
+- **Checkout:** Apenas na seção da oferta → `https://nucleosaudavel.pay.yampi.com.br/r/Q4S7ZK1U0Q`
+- **Todos os outros botões:** rolar para a seção da oferta `#oferta`
+- Layout **100% responsivo** (desktop, tablet, mobile)
+
+---
+
+## 🔹 Seção 1 – Hero (Abertura)
+- Fundo verde `#6b8e5c`
+- Conteúdo centralizado:
+  - Título: **200 CAFÉS DA MANHÃ DE NUTRI (COM SABOR)®**
+  - Subtítulo: "200 receitas práticas e nutritivas para começar o dia com energia, saciedade e muito sabor."
+  - Botão CTA → rolar para `#oferta`
+  - Galeria de imagens (3 imagens principais):
+    - `https://nucleosaudavel.com/wp-content/uploads/2025/08/01.webp`
+    - `https://nucleosaudavel.com/wp-content/uploads/2025/08/03.webp`
+    - `https://nucleosaudavel.com/wp-content/uploads/2025/08/02.webp`
+
+---
+
+## 🔹 Seção 2 – Benefícios
+- Fundo branco
+- Título: **Por que esse cardápio é diferente?**
+- Ícones SVG grossos + textos:
+  - ✅ Criado por nutricionista
+  - ✅ Mais de 200 opções saudáveis
+  - ✅ Baixas calorias e sabor de verdade
+  - ✅ Preparos em menos de 15 min
+  - ✅ Ingredientes simples e acessíveis
+  - ✅ Perfeito para toda família
+- Botão → rolar para `#oferta`
+
+---
+
+## 🔹 Seção 3 – Galeria de Receitas
+- Fundo cinza claro `#fafafa`
+- Título centralizado: **Descubra Algumas das Receitas Inclusas**
+- Grid responsivo (3 colunas desktop, 2 tablet, 1 mobile)
+- Cada card → imagem + título + descrição curta + tempo (⏱) + calorias (🔥 kcal)
+
+**Receitas (com imagens e dados):**
+1. Omelete Fit → `https://nucleosaudavel.com/wp-content/uploads/2025/08/OMELETE.webp`  
+   "Rápido e cheio de proteínas."  
+   ⏱ 8 min • 🔥 180 kcal  
+2. Ovos Fritos Saudáveis → `https://nucleosaudavel.com/wp-content/uploads/2025/08/OVOSFRITOS.webp`  
+   "Versão leve e prática."  
+   ⏱ 5 min • 🔥 150 kcal  
+3. Pizza Fit Rápida → `https://nucleosaudavel.com/wp-content/uploads/2025/08/PIZZA-RAPIDA.webp`  
+   "Mata a vontade sem sair da dieta."  
+   ⏱ 12 min • 🔥 210 kcal  
+4. Panqueca Integral → `https://nucleosaudavel.com/wp-content/uploads/2025/08/PANQUECA.webp`  
+   "Doce saudável para variar a manhã."  
+   ⏱ 10 min • 🔥 190 kcal  
+5. Salada de Frutas → `https://nucleosaudavel.com/wp-content/uploads/2025/08/SALADA-FRUTA.webp`  
+   "Refrescante e cheia de vitaminas."  
+   ⏱ 6 min • 🔥 120 kcal  
+6. Shake Proteico → `https://nucleosaudavel.com/wp-content/uploads/2025/08/SHAKES.webp`  
+   "Cremoso e nutritivo em segundos."  
+   ⏱ 3 min • 🔥 160 kcal  
+7. Pão Gratinado → `https://nucleosaudavel.com/wp-content/uploads/2025/08/PAO-GRATINADO.webp`  
+   "Crosta crocante sem culpa."  
+   ⏱ 7 min • 🔥 200 kcal  
+8. Bolo de Caneca → `https://nucleosaudavel.com/wp-content/uploads/2025/08/BOLOCANECA.webp`  
+   "Quentinho em 2 minutos."  
+   ⏱ 2 min • 🔥 170 kcal  
+9. Sanduíche Natural → `https://nucleosaudavel.com/wp-content/uploads/2025/08/SANDUICHE.jpg`  
+   "Prático e saboroso."  
+   ⏱ 5 min • 🔥 220 kcal  
+10. Brownie Fit → `https://nucleosaudavel.com/wp-content/uploads/2025/08/BROWIE.jpg`  
+    "Delícia saudável para matar a vontade de doce."  
+    ⏱ 15 min • 🔥 240 kcal  
+
+- Botão → rolar para `#oferta`
+
+---
+
+## 🔹 Seção 4 – Sobre a Nutricionista
+- Fundo branco
+- Imagem lateral: `https://i.postimg.cc/bw6n6fnp/NUTRI.webp`
+- Texto apresentando **Nutricionista Maria Aguiar**
+  - 10+ anos de experiência
+  - Foco em unir saúde e sabor
+  - Mais de 5.000 clientes impactados
+- Botão → rolar para `#oferta`
+
+---
+
+## 🔹 Seção 5 – Bônus Exclusivos
+- Fundo claro
+- Título: **Bônus Exclusivos para Você**
+- Subtítulo: “Ao adquirir o Cardápio da Nutri, você ainda recebe materiais extras para potencializar seus resultados.”
+- Grid responsivo (3 colunas desktop, 2 tablet, 1 mobile)
+- Cards:
+  1. Guia de Lanches Saudáveis → `https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus1.webp`  
+     "Receitas práticas e rápidas para manter a dieta no dia a dia."  
+  2. Cardápio Semanal Planejado → `https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus2.webp`  
+     "Sugestão completa de cardápio para organizar suas refeições."  
+  3. Lista de Compras Inteligente → `https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus3.webp`  
+     "Facilite sua vida no mercado comprando apenas o necessário."  
+- Botão → rolar para `#oferta`
+
+---
+
+## 🔹 Seção 6 – Vantagens
+- Fundo branco
+- Título: **O que você vai ganhar com esse cardápio?**
+- Grid de checks:
+  - Economia de tempo
+  - Variedade de opções
+  - Aprovação da família
+  - Energia e disposição
+  - Feito por nutricionista
+- Botão → rolar para `#oferta`
+
+---
+
+## 🔹 Seção 7 – Depoimentos
+- Fundo verde `#6b8e5c`
+- Título: **Mais de 5.427 pessoas já adquiriram**
+- Grid responsivo (prints reais):
+  - `https://i.postimg.cc/YCV6rwC8/whats-2.webp`
+  - `https://i.postimg.cc/mrHQh6c4/instadp.webp`
+  - `https://i.postimg.cc/Z50Pzq4C/whatsas1.webp`
+
+---
+
+## 🔹 Seção 8 – Oferta Premium (id="oferta")
+- Fundo verde `#6b8e5c`
+- Container branco centralizado
+- Mockup: `https://nucleosaudavel.com/wp-content/uploads/2025/08/mockup.webp`
+- Preço:
+  - ~~De R$49,90~~
+  - **R$24,90 à vista** (grande, vermelho)
+  - ou 5x de R$4,98 (verde)
+- CTA principal → **checkout Yampi**
+- Logo Mercado Pago: `https://cdn.awsli.com.br/1845/1845902/arquivos/jdbstpx.png`
+- Microcopy: “Compra 100% segura • Garantia de 7 dias • Oferta válida hoje”
+
+---
+
+## 🔹 Seção 9 – Garantia
+- Fundo claro
+- Imagem: `https://nucleosaudavel.com/wp-content/uploads/2025/08/garantia.png`
+- Texto: “Você tem **7 dias** para testar sem risco. Se não gostar, devolvemos seu dinheiro.”
+
+---
+
+## 🔹 Seção 10 – FAQ
+- Fundo branco
+- Título: **Dúvidas Frequentes**
+- FAQ estilo acordeão (<details> + <summary>)
+- Perguntas:
+  - Como recebo o material?
+  - As receitas têm sabor de verdade?
+  - São saudáveis?
+  - Servem para a família toda?
+  - São fáceis de fazer?
+  - Preciso saber cozinhar?
+  - Ingredientes acessíveis?
+  - Utensílios especiais?
+
+---
+
+## 🔹 Rodapé
+- Fundo escuro `#2e2e2e`
+- Texto centralizado:
+  - "© 2025 Cardápio da Nutri – Todos os direitos reservados"
+  - Links: Política de Privacidade | Termos de Uso
