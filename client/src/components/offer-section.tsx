@@ -115,20 +115,6 @@ export default function OfferSection() {
                     data-testid="img-payment-logo"
                   />
                   
-                  <div className="flex flex-wrap justify-center gap-1 md:gap-2 text-xs" data-testid="text-security-info">
-                    <div className="flex items-center bg-green-100 px-2 py-1 rounded-full">
-                      <Shield className="w-3 h-3 mr-1 text-green-600" />
-                      <span>Compra segura</span>
-                    </div>
-                    <div className="flex items-center bg-yellow-100 px-2 py-1 rounded-full">
-                      <Star className="w-3 h-3 mr-1 text-yellow-600" />
-                      <span>Garantia 7 dias</span>
-                    </div>
-                    <div className="flex items-center bg-red-100 px-2 py-1 rounded-full">
-                      <Clock className="w-3 h-3 mr-1 text-red-600" />
-                      <span>Oferta limitada</span>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
