@@ -3,7 +3,10 @@ import { ShoppingCart, Shield, Star, Clock, Crown, Zap } from "lucide-react";
 
 export default function OfferSection() {
   const handlePurchase = () => {
-    window.open('https://nucleosaudavel.pay.yampi.com.br/r/Q4S7ZK1U0Q', '_blank');
+    const currentParams = window.location.search;
+    const baseUrl = 'https://nucleosaudavel.pay.yampi.com.br/r/Q4S7ZK1U0Q';
+    const finalUrl = currentParams ? `${baseUrl}${currentParams}` : baseUrl;
+    window.open(finalUrl, '_blank');
   };
 
   return (
