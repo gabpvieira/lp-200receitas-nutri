@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://manual-da-nutri.replit.app/sitemap.xml

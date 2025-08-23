@@ -1,0 +1,25 @@
+{
+  "name": "Manual da Nutri: 200 Receitas Rápidas",
+  "short_name": "Manual da Nutri",
+  "description": "200 receitas rápidas e saborosas para café da manhã criadas por nutricionista especializada",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#6b8e5c",
+  "theme_color": "#6b8e5c",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["food", "health", "lifestyle"],
+  "lang": "pt-BR"
+}
