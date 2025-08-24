@@ -47,7 +47,7 @@ export default function NutritionistSection() {
             <div className="mt-8">
               <Button 
                 onClick={scrollToOffer}
-                className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-base md:text-xl py-4 md:py-6 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
+                className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-base md:text-xl py-6 md:py-8 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
                 data-testid="button-nutritionist-cta"
               >
                 <span className="flex flex-col leading-tight text-center">
