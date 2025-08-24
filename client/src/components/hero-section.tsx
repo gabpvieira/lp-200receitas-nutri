@@ -69,7 +69,7 @@ export default function HeroSection() {
             <span className="flex flex-col leading-tight text-center">
               <span>QUERO TRANSFORMAR</span>
               <span>MEUS CAFÉS DA MANHÃ</span>
-              <span className="text-lg md:text-2xl font-black">AGORA</span>
+              <span className="text-2xl md:text-4xl font-black">AGORA</span>
             </span>
           </Button>
 
