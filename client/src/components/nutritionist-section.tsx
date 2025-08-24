@@ -50,7 +50,7 @@ export default function NutritionistSection() {
                 className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-base md:text-xl py-6 md:py-8 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
                 data-testid="button-nutritionist-cta"
               >
-                <span className="flex flex-col leading-tight text-center">
+                <span className="flex flex-col leading-none text-center">
                   <span className="text-lg md:text-2xl font-black">QUERO AS RECEITAS</span>
                   <span className="text-lg md:text-2xl font-black">DA AMANDA</span>
                 </span>
