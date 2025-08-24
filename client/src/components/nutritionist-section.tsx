@@ -22,12 +22,12 @@ export default function NutritionistSection() {
           <div className="order-2 md:order-1">
             <h2 className="text-3xl md:text-4xl font-bold text-text-primary mb-6">
               Conheça a Nutricionista<br />
-              <span className="text-primary-green">Maria Aguiar</span>
+              <span className="text-primary-green">Amanda Vieira</span>
             </h2>
             <div className="space-y-4 text-text-secondary leading-relaxed">
               <p>
                 Com mais de 10 anos de experiência em nutrição clínica e funcional, 
-                Maria Aguiar é especialista em criar receitas que unem saúde e sabor.
+                Amanda Vieira é especialista em criar receitas que unem saúde e sabor.
               </p>
               <p>
                 Seu foco principal é mostrar que comer saudável pode ser prático, 
@@ -50,15 +50,15 @@ export default function NutritionistSection() {
                 className="cta-button"
                 data-testid="button-nutritionist-cta"
               >
-                QUERO AS RECEITAS DA MARIA
+                QUERO AS RECEITAS DA AMANDA
               </Button>
             </div>
           </div>
           <div className="order-1 md:order-2">
             <img 
-              src="https://i.postimg.cc/bw6n6fnp/NUTRI.webp" 
-              alt="Nutricionista Maria Aguiar" 
-              className="rounded-2xl shadow-2xl w-full max-w-md mx-auto"
+              src="https://i.postimg.cc/RhdLLW1T/perfol-1.jpg" 
+              alt="Nutricionista Amanda Vieira" 
+              className="rounded-2xl shadow-2xl w-full max-w-sm mx-auto h-96 object-cover object-center"
               data-testid="img-nutritionist"
             />
           </div>
