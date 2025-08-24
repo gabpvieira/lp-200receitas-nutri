@@ -51,9 +51,8 @@ export default function NutritionistSection() {
                 data-testid="button-nutritionist-cta"
               >
                 <span className="flex flex-col leading-tight text-center">
-                  <span>QUERO TRANSFORMAR</span>
-                  <span>MEUS CAFÉS DA MANHÃ</span>
-                  <span className="text-lg md:text-2xl font-black">AGORA</span>
+                  <span className="text-lg md:text-2xl font-black">QUERO AS RECEITAS</span>
+                  <span className="text-lg md:text-2xl font-black">DA AMANDA</span>
                 </span>
               </Button>
             </div>
