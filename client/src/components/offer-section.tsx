@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ShoppingCart, Shield, Star, Clock, Crown, Zap } from "lucide-react";
+import { ShoppingCart, Shield, Star, Clock, Crown, Zap, BookOpen, Coffee, Calendar, ShoppingBag } from "lucide-react";
 
 export default function OfferSection() {
   const handlePurchase = () => {
@@ -81,22 +81,37 @@ export default function OfferSection() {
                 
                 {/* Bonus Summary */}
                 <div className="bg-gray-50 rounded-lg p-4 mb-6">
-                  <h3 className="text-lg font-bold text-text-primary mb-3 text-center">✨ VOCÊ RECEBE TUDO ISSO:</h3>
+                  <h3 className="text-lg font-bold text-text-primary mb-3 text-left md:text-center">
+                    <Star className="w-5 h-5 inline mr-2 text-yellow-500" />
+                    VOCÊ RECEBE TUDO ISSO:
+                  </h3>
                   <div className="space-y-2 text-sm">
                     <div className="flex justify-between items-center">
-                      <span>📖 Manual da Nutri (200 receitas)</span>
+                      <span className="flex items-center">
+                        <BookOpen className="w-4 h-4 mr-2 text-primary-green" />
+                        Manual da Nutri (200 receitas)
+                      </span>
                       <span className="line-through text-gray-500">R$97,00</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span>🍔 130 Lanches Deliciosos</span>
+                      <span className="flex items-center">
+                        <Coffee className="w-4 h-4 mr-2 text-orange-500" />
+                        130 Lanches Deliciosos
+                      </span>
                       <span className="line-through text-gray-500">R$29,90</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span>📅 Cardápio Semanal Pronto</span>
+                      <span className="flex items-center">
+                        <Calendar className="w-4 h-4 mr-2 text-blue-500" />
+                        Cardápio Semanal Pronto
+                      </span>
                       <span className="line-through text-gray-500">R$19,90</span>
                     </div>
                     <div className="flex justify-between items-center">
-                      <span>🛒 Lista de Compras Inteligente</span>
+                      <span className="flex items-center">
+                        <ShoppingBag className="w-4 h-4 mr-2 text-purple-500" />
+                        Lista de Compras Inteligente
+                      </span>
                       <span className="line-through text-gray-500">R$14,90</span>
                     </div>
                     <hr className="my-3" />
@@ -105,7 +120,8 @@ export default function OfferSection() {
                       <span className="line-through text-gray-500">R$161,70</span>
                     </div>
                     <div className="bg-alert-red text-white text-center py-2 rounded-lg font-bold">
-                      🎯 TUDO POR APENAS R$19,90!
+                      <Crown className="w-4 h-4 inline mr-2" />
+                      TUDO POR APENAS R$19,90!
                     </div>
                   </div>
                 </div>
