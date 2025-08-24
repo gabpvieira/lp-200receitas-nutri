@@ -12,21 +12,39 @@ export default function BonusSection() {
   const bonuses = [
     {
       image: "https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus1.webp",
-      title: "Guia de Lanches Saudáveis",
+      title: "🍔 130 Lanches Deliciosos Prontos Pra Você",
       value: "R$29,90",
-      description: "Receitas práticas e rápidas para manter a dieta no dia a dia."
+      subheadline: "👉 Receitas rápidas, variadas e econômicas para nunca faltar opção no seu cardápio.",
+      bulletPoints: [
+        "✅ Diversidade: sanduíches, wraps, salgados e opções fit",
+        "✅ Economia: refeições baratas sem abrir mão do sabor", 
+        "✅ Praticidade: ingredientes simples que você já tem em casa",
+        "✅ Versatilidade: combina com lanche rápido ou refeição completa"
+      ]
     },
     {
       image: "https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus2.webp",
-      title: "Cardápio Semanal Planejado",
+      title: "📅 Cardápio Semanal Pronto",
       value: "R$19,90",
-      description: "Sugestão completa de cardápio para organizar suas refeições."
+      subheadline: "👉 Organize todas as refeições da semana sem esforço nem desperdício.",
+      bulletPoints: [
+        "✅ Sugestões práticas e balanceadas para cada dia",
+        "✅ Acabe com a dúvida \"o que cozinhar hoje?\"",
+        "✅ Economize tempo e dinheiro com planejamento",
+        "✅ Mais saúde e variedade no prato, sem repetir sempre as mesmas coisas"
+      ]
     },
     {
       image: "https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus3.webp",
-      title: "Lista de Compras Inteligente",
+      title: "🛒 Lista de Compras Inteligente",
       value: "R$14,90",
-      description: "Facilite sua vida no mercado comprando apenas o necessário."
+      subheadline: "👉 Vá ao mercado com foco, economize dinheiro e leve só o que realmente importa.",
+      bulletPoints: [
+        "✅ Evite desperdícios e compras por impulso",
+        "✅ Ganhe tempo com uma lista pronta e prática",
+        "✅ Monte refeições completas sem faltar nenhum ingrediente",
+        "✅ Mais saúde e economia a cada ida ao mercado"
+      ]
     }
   ];
 
@@ -93,8 +111,17 @@ export default function BonusSection() {
                   </div>
                 </div>
                 
-                <h3 className="text-xl font-bold text-text-primary mb-3">{bonus.title}</h3>
-                <p className="text-text-secondary mb-4">{bonus.description}</p>
+                <h3 className="text-lg font-bold text-text-primary mb-3 leading-tight">{bonus.title}</h3>
+                <p className="text-text-secondary mb-4 text-sm font-medium">{bonus.subheadline}</p>
+                
+                {/* Bullet Points */}
+                <div className="space-y-1.5 mb-4">
+                  {bonus.bulletPoints.map((point, pointIndex) => (
+                    <div key={pointIndex} className="text-xs text-text-secondary leading-relaxed">
+                      {point}
+                    </div>
+                  ))}
+                </div>
                 
                 <div className="flex items-center text-dark-green font-medium">
                   <CheckCircle className="w-4 h-4 mr-2" />
