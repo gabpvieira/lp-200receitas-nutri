@@ -68,10 +68,10 @@ export default function OfferSection() {
                     De R$97,00
                   </p>
                   <div className="flex items-baseline justify-center md:justify-start mb-2">
-                    <span className="text-6xl md:text-8xl font-black text-alert-red" data-testid="text-sale-price">
+                    <span className="text-7xl md:text-9xl font-black text-alert-red" data-testid="text-sale-price">
                       R$19
                     </span>
-                    <span className="text-3xl md:text-4xl font-bold text-alert-red">,90</span>
+                    <span className="text-4xl md:text-5xl font-bold text-alert-red">,90</span>
                   </div>
                   <p className="text-sm text-text-secondary mb-2">à vista</p>
                   <div className="inline-block bg-dark-green text-white px-3 py-1 rounded-full text-sm font-semibold" data-testid="text-installment">
