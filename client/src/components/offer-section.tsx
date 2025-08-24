@@ -63,11 +63,11 @@ export default function OfferSection() {
               {/* Pricing & CTA */}
               <div className="text-left">
                 {/* Price */}
-                <div className="mb-6">
+                <div className="mb-6 text-center md:text-left">
                   <p className="text-text-secondary text-base md:text-lg line-through mb-1" data-testid="text-original-price">
                     De R$97,00
                   </p>
-                  <div className="flex items-baseline justify-start mb-2">
+                  <div className="flex items-baseline justify-center md:justify-start mb-2">
                     <span className="text-6xl md:text-8xl font-black text-alert-red" data-testid="text-sale-price">
                       R$19
                     </span>
