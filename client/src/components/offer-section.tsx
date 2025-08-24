@@ -61,13 +61,13 @@ export default function OfferSection() {
               </div>
               
               {/* Pricing & CTA */}
-              <div className="text-center md:text-left">
+              <div className="text-left">
                 {/* Price */}
                 <div className="mb-6">
                   <p className="text-text-secondary text-base md:text-lg line-through mb-1" data-testid="text-original-price">
                     De R$97,00
                   </p>
-                  <div className="flex items-baseline justify-center md:justify-start mb-2">
+                  <div className="flex items-baseline justify-start mb-2">
                     <span className="text-6xl md:text-8xl font-black text-alert-red" data-testid="text-sale-price">
                       R$19
                     </span>
@@ -120,19 +120,19 @@ export default function OfferSection() {
                 
                 {/* Benefits */}
                 <div className="grid grid-cols-2 gap-2 mb-6 text-xs md:text-sm">
-                  <div className="flex items-center justify-center md:justify-start">
+                  <div className="flex items-center justify-start">
                     <Shield className="w-4 h-4 text-dark-green mr-1" />
                     <span>Garantia 7 dias</span>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start">
+                  <div className="flex items-center justify-start">
                     <Star className="w-4 h-4 text-yellow-500 mr-1" />
                     <span>+5.000 clientes</span>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start">
+                  <div className="flex items-center justify-start">
                     <Zap className="w-4 h-4 text-alert-red mr-1" />
                     <span>Receitas rápidas</span>
                   </div>
-                  <div className="flex items-center justify-center md:justify-start">
+                  <div className="flex items-center justify-start">
                     <Crown className="w-4 h-4 text-yellow-600 mr-1" />
                     <span>Por nutricionista</span>
                   </div>
