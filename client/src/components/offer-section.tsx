@@ -40,47 +40,52 @@ export default function OfferSection() {
               </p>
             </div>
             
-            <div className="space-y-6 md:space-y-0 md:grid md:grid-cols-2 md:gap-8 items-center">
-              {/* Product Image */}
-              <div className="text-center relative">
-                <img 
-                  src="https://nucleosaudavel.com/wp-content/uploads/2025/08/MOCKUP.png" 
-                  alt="Cardápio da Nutri - Mockup do produto" 
-                  className="w-full max-w-xs md:max-w-sm mx-auto"
-                  data-testid="img-product-mockup"
-                />
-                
-                {/* Product Badges */}
-                <div className="absolute top-2 -right-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-xs font-bold">
-                  200 RECEITAS
+            {/* Desktop: First row with mockup and price */}
+            <div className="space-y-6 md:space-y-8">
+              <div className="md:grid md:grid-cols-2 md:gap-8 items-center space-y-6 md:space-y-0">
+                {/* Product Image */}
+                <div className="text-center relative">
+                  <img 
+                    src="https://nucleosaudavel.com/wp-content/uploads/2025/08/MOCKUP.png" 
+                    alt="Cardápio da Nutri - Mockup do produto" 
+                    className="w-full max-w-xs md:max-w-sm mx-auto"
+                    data-testid="img-product-mockup"
+                  />
+                  
+                  {/* Product Badges */}
+                  <div className="absolute top-2 -right-2 bg-yellow-400 text-black px-2 py-1 rounded-full text-xs font-bold">
+                    200 RECEITAS
+                  </div>
+                  <div className="absolute bottom-8 -left-2 bg-dark-green text-white px-2 py-1 rounded-full text-xs font-bold flex items-center">
+                    <Clock className="w-3 h-3 mr-1" />
+                    RÁPIDO
+                  </div>
                 </div>
-                <div className="absolute bottom-8 -left-2 bg-dark-green text-white px-2 py-1 rounded-full text-xs font-bold flex items-center">
-                  <Clock className="w-3 h-3 mr-1" />
-                  RÁPIDO
+                
+                {/* Price only */}
+                <div className="text-left">
+                  <div className="mb-6 text-center md:text-left">
+                    <p className="text-text-secondary text-base md:text-lg line-through mb-1" data-testid="text-original-price">
+                      De R$97,00
+                    </p>
+                    <div className="flex items-baseline justify-center md:justify-start mb-2">
+                      <span className="text-7xl md:text-9xl font-black text-alert-red" data-testid="text-sale-price">
+                        R$19
+                      </span>
+                      <span className="text-4xl md:text-5xl font-bold text-alert-red">,90</span>
+                    </div>
+                    <p className="text-sm text-text-secondary mb-2">à vista</p>
+                    <div className="inline-block bg-dark-green text-white px-3 py-1 rounded-full text-sm font-semibold" data-testid="text-installment">
+                      ou 5x de R$3,98
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              {/* Pricing & CTA */}
-              <div className="text-left">
-                {/* Price */}
-                <div className="mb-6 text-center md:text-left">
-                  <p className="text-text-secondary text-base md:text-lg line-through mb-1" data-testid="text-original-price">
-                    De R$97,00
-                  </p>
-                  <div className="flex items-baseline justify-center md:justify-start mb-2">
-                    <span className="text-7xl md:text-9xl font-black text-alert-red" data-testid="text-sale-price">
-                      R$19
-                    </span>
-                    <span className="text-4xl md:text-5xl font-bold text-alert-red">,90</span>
-                  </div>
-                  <p className="text-sm text-text-secondary mb-2">à vista</p>
-                  <div className="inline-block bg-dark-green text-white px-3 py-1 rounded-full text-sm font-semibold" data-testid="text-installment">
-                    ou 5x de R$3,98
-                  </div>
-                </div>
-                
-                {/* Bonus Summary */}
-                <div className="bg-gray-50 rounded-lg p-4 mb-6">
+              {/* Desktop: Second row with bonus summary and CTA */}
+              <div className="md:grid md:grid-cols-2 md:gap-8 items-start space-y-6 md:space-y-0">
+                {/* Bonus Summary - Left column on desktop */}
+                <div className="bg-gray-50 rounded-lg p-4">
                   <h3 className="text-lg font-bold text-text-primary mb-3 text-left md:text-center">
                     <Star className="w-5 h-5 inline mr-2 text-yellow-500" />
                     VOCÊ RECEBE TUDO ISSO:
@@ -118,45 +123,47 @@ export default function OfferSection() {
                   </div>
                 </div>
                 
-                {/* Benefits */}
-                <div className="grid grid-cols-2 gap-2 mb-6 text-xs md:text-sm">
-                  <div className="flex items-center justify-start">
-                    <Shield className="w-4 h-4 text-dark-green mr-1" />
-                    <span>Garantia 7 dias</span>
+                {/* Benefits and CTA - Right column on desktop */}
+                <div className="space-y-6">
+                  {/* Benefits */}
+                  <div className="grid grid-cols-2 gap-2 text-xs md:text-sm">
+                    <div className="flex items-center justify-start">
+                      <Shield className="w-4 h-4 text-dark-green mr-1" />
+                      <span>Garantia 7 dias</span>
+                    </div>
+                    <div className="flex items-center justify-start">
+                      <Star className="w-4 h-4 text-yellow-500 mr-1" />
+                      <span>+5.000 clientes</span>
+                    </div>
+                    <div className="flex items-center justify-start">
+                      <Zap className="w-4 h-4 text-alert-red mr-1" />
+                      <span>Receitas rápidas</span>
+                    </div>
+                    <div className="flex items-center justify-start">
+                      <Crown className="w-4 h-4 text-yellow-600 mr-1" />
+                      <span>Por nutricionista</span>
+                    </div>
                   </div>
-                  <div className="flex items-center justify-start">
-                    <Star className="w-4 h-4 text-yellow-500 mr-1" />
-                    <span>+5.000 clientes</span>
-                  </div>
-                  <div className="flex items-center justify-start">
-                    <Zap className="w-4 h-4 text-alert-red mr-1" />
-                    <span>Receitas rápidas</span>
-                  </div>
-                  <div className="flex items-center justify-start">
-                    <Crown className="w-4 h-4 text-yellow-600 mr-1" />
-                    <span>Por nutricionista</span>
-                  </div>
-                </div>
-                
-                {/* CTA Button */}
-                <Button 
-                  onClick={handlePurchase}
-                  className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-xl md:text-2xl py-6 md:py-8 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
-                  data-testid="button-purchase"
-                >
-                  <ShoppingCart className="w-7 h-7 mr-3" />
-                  COMPRAR AGORA
-                </Button>
-                
-                {/* Payment Methods */}
-                <div className="mt-4 space-y-3">
-                  <img 
-                    src="https://cdn.awsli.com.br/1845/1845902/arquivos/jdbstpx.png" 
-                    alt="Mercado Pago - Pagamento Seguro" 
-                    className="w-full h-22 md:h-26 object-contain"
-                    data-testid="img-payment-logo"
-                  />
                   
+                  {/* CTA Button */}
+                  <Button 
+                    onClick={handlePurchase}
+                    className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-xl md:text-2xl py-6 md:py-8 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
+                    data-testid="button-purchase"
+                  >
+                    <ShoppingCart className="w-7 h-7 mr-3" />
+                    COMPRAR AGORA
+                  </Button>
+                  
+                  {/* Payment Methods */}
+                  <div className="space-y-3">
+                    <img 
+                      src="https://cdn.awsli.com.br/1845/1845902/arquivos/jdbstpx.png" 
+                      alt="Mercado Pago - Pagamento Seguro" 
+                      className="w-full h-22 md:h-26 object-contain"
+                      data-testid="img-payment-logo"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
