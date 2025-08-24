@@ -86,33 +86,25 @@ export default function OfferSection() {
                     VOCÊ RECEBE TUDO ISSO:
                   </h3>
                   <div className="space-y-2 text-sm">
-                    <div className="flex justify-between items-center">
-                      <span className="flex items-center">
-                        <BookOpen className="w-4 h-4 mr-2 text-primary-green" />
-                        Manual da Nutri (200 receitas)
-                      </span>
-                      <span className="line-through text-gray-500">R$97,00</span>
+                    <div className="flex items-center">
+                      <BookOpen className="w-4 h-4 mr-2 text-primary-green" />
+                      <span className="flex-1">Manual da Nutri (200 receitas)</span>
+                      <span className="line-through text-gray-500 ml-2">R$97,00</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="flex items-center">
-                        <Coffee className="w-4 h-4 mr-2 text-orange-500" />
-                        130 Lanches Deliciosos
-                      </span>
-                      <span className="line-through text-gray-500">R$29,90</span>
+                    <div className="flex items-center">
+                      <Coffee className="w-4 h-4 mr-2 text-orange-500" />
+                      <span className="flex-1">130 Lanches Deliciosos</span>
+                      <span className="line-through text-gray-500 ml-2">R$29,90</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="flex items-center">
-                        <Calendar className="w-4 h-4 mr-2 text-blue-500" />
-                        Cardápio Semanal Pronto
-                      </span>
-                      <span className="line-through text-gray-500">R$19,90</span>
+                    <div className="flex items-center">
+                      <Calendar className="w-4 h-4 mr-2 text-blue-500" />
+                      <span className="flex-1">Cardápio Semanal Pronto</span>
+                      <span className="line-through text-gray-500 ml-2">R$19,90</span>
                     </div>
-                    <div className="flex justify-between items-center">
-                      <span className="flex items-center">
-                        <ShoppingBag className="w-4 h-4 mr-2 text-purple-500" />
-                        Lista de Compras Inteligente
-                      </span>
-                      <span className="line-through text-gray-500">R$14,90</span>
+                    <div className="flex items-center">
+                      <ShoppingBag className="w-4 h-4 mr-2 text-purple-500" />
+                      <span className="flex-1">Lista de Compras Inteligente</span>
+                      <span className="line-through text-gray-500 ml-2">R$14,90</span>
                     </div>
                     <hr className="my-3" />
                     <div className="flex justify-between items-center font-bold">
