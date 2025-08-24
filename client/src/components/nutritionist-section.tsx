@@ -58,7 +58,7 @@ export default function NutritionistSection() {
             <img 
               src="https://i.postimg.cc/RhdLLW1T/perfol-1.jpg" 
               alt="Nutricionista Amanda Vieira" 
-              className="rounded-2xl shadow-2xl w-full max-w-sm mx-auto h-96 object-cover object-center"
+              className="rounded-2xl shadow-2xl w-full max-w-sm mx-auto object-cover object-center"
               data-testid="img-nutritionist"
             />
           </div>
