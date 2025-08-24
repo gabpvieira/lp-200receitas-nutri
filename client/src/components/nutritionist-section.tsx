@@ -47,10 +47,14 @@ export default function NutritionistSection() {
             <div className="mt-8">
               <Button 
                 onClick={scrollToOffer}
-                className="cta-button"
+                className="w-full bg-gradient-to-r from-dark-green to-primary-green hover:from-primary-green hover:to-dark-green text-white font-bold text-base md:text-xl py-4 md:py-6 px-6 md:px-8 rounded-xl shadow-xl transform transition-all duration-300 hover:scale-105"
                 data-testid="button-nutritionist-cta"
               >
-                QUERO AS RECEITAS DA AMANDA
+                <span className="flex flex-col leading-tight text-center">
+                  <span>QUERO TRANSFORMAR</span>
+                  <span>MEUS CAFÉS DA MANHÃ</span>
+                  <span className="text-lg md:text-2xl font-black">AGORA</span>
+                </span>
               </Button>
             </div>
           </div>
