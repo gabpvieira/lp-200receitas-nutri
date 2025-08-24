@@ -65,7 +65,7 @@ export default function OfferSection() {
                 {/* Price */}
                 <div className="mb-6">
                   <p className="text-text-secondary text-base md:text-lg line-through mb-1" data-testid="text-original-price">
-                    De R$49,90
+                    De R$97,00
                   </p>
                   <div className="flex items-baseline justify-center md:justify-start mb-2">
                     <span className="text-6xl md:text-8xl font-black text-alert-red" data-testid="text-sale-price">
@@ -76,6 +76,37 @@ export default function OfferSection() {
                   <p className="text-sm text-text-secondary mb-2">à vista</p>
                   <div className="inline-block bg-dark-green text-white px-3 py-1 rounded-full text-sm font-semibold" data-testid="text-installment">
                     ou 5x de R$3,98
+                  </div>
+                </div>
+                
+                {/* Bonus Summary */}
+                <div className="bg-gray-50 rounded-lg p-4 mb-6">
+                  <h3 className="text-lg font-bold text-text-primary mb-3 text-center">✨ VOCÊ RECEBE TUDO ISSO:</h3>
+                  <div className="space-y-2 text-sm">
+                    <div className="flex justify-between items-center">
+                      <span>📖 Manual da Nutri (200 receitas)</span>
+                      <span className="line-through text-gray-500">R$97,00</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>🍔 130 Lanches Deliciosos</span>
+                      <span className="line-through text-gray-500">R$29,90</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>📅 Cardápio Semanal Pronto</span>
+                      <span className="line-through text-gray-500">R$19,90</span>
+                    </div>
+                    <div className="flex justify-between items-center">
+                      <span>🛒 Lista de Compras Inteligente</span>
+                      <span className="line-through text-gray-500">R$14,90</span>
+                    </div>
+                    <hr className="my-3" />
+                    <div className="flex justify-between items-center font-bold">
+                      <span>VALOR TOTAL:</span>
+                      <span className="line-through text-gray-500">R$161,70</span>
+                    </div>
+                    <div className="bg-alert-red text-white text-center py-2 rounded-lg font-bold">
+                      🎯 TUDO POR APENAS R$19,90!
+                    </div>
                   </div>
                 </div>
                 
