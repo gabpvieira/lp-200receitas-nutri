@@ -170,9 +170,9 @@ export default function OfferSection() {
             
             {/* Urgency Timer */}
             <div className="mt-6 md:mt-8 text-center">
-              <div className="inline-flex items-center bg-alert-red text-white px-4 py-2 rounded-full font-bold text-xs md:text-sm animate-pulse">
-                <Clock className="w-4 h-4 mr-2" />
-                OFERTA VÁLIDA APENAS HOJE - NÃO PERCA!
+              <div className="inline-flex items-center bg-alert-red text-white px-6 py-3 rounded-full font-bold text-xs md:text-sm animate-pulse max-w-full text-center">
+                <Clock className="w-4 h-4 mr-2 flex-shrink-0" />
+                <span className="whitespace-nowrap">OFERTA VÁLIDA APENAS HOJE - NÃO PERCA!</span>
               </div>
             </div>
           </div>
