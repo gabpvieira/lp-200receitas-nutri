@@ -66,10 +66,10 @@ export default function HeroSection() {
             className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-300 hover:to-orange-400 text-black font-bold text-base md:text-xl py-6 md:py-8 px-8 md:px-12 rounded-2xl shadow-2xl transform transition-all duration-300 hover:scale-110 mb-12 h-auto"
             data-testid="button-hero-cta"
           >
-            <Sparkles className="w-6 h-6 mr-3" />
-            <span className="block md:inline">
-              <span className="block md:inline">QUERO TRANSFORMAR MEUS</span>
-              <span className="block md:inline md:ml-2">CAFÉS DA MANHÃ AGORA</span>
+            <span className="flex flex-col leading-tight text-center">
+              <span>QUERO TRANSFORMAR</span>
+              <span>MEUS CAFÉS DA MANHÃ</span>
+              <span className="text-lg md:text-2xl font-black">AGORA</span>
             </span>
           </Button>
 
