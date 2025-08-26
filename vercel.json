@@ -5,10 +5,14 @@
   "installCommand": "npm install",
   "framework": null,
   "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/assets/:path*", "destination": "/assets/:path*" },
+    { "source": "/static/:path*", "destination": "/static/:path*" },
+    { "source": "/_app/:path*", "destination": "/_app/:path*" },
+    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/manifest.json", "destination": "/manifest.json" },
+    { "source": "/robots.txt", "destination": "/robots.txt" },
+    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
+    { "source": "/:path*", "destination": "/index.html" }
   ],
   "headers": [
     {
