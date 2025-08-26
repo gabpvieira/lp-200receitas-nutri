@@ -6,10 +6,25 @@
   "framework": null,
   "rewrites": [
     { "source": "/assets/:path*", "destination": "/assets/:path*" },
-    { "source": "/manifest.json", "destination": "/manifest.json" },
-    { "source": "/robots.txt", "destination": "/robots.txt" },
-    { "source": "/sitemap.xml", "destination": "/sitemap.xml" },
-    { "source": "/favicon.ico", "destination": "/favicon.ico" },
+    { "source": "/static/:path*", "destination": "/static/:path*" },
+
+    { "source": "/:path*.css",  "destination": "/:path*.css" },
+    { "source": "/:path*.js",   "destination": "/:path*.js" },
+    { "source": "/:path*.map",  "destination": "/:path*.map" },
+    { "source": "/:path*.png",  "destination": "/:path*.png" },
+    { "source": "/:path*.jpg",  "destination": "/:path*.jpg" },
+    { "source": "/:path*.jpeg", "destination": "/:path*.jpeg" },
+    { "source": "/:path*.webp", "destination": "/:path*.webp" },
+    { "source": "/:path*.svg",  "destination": "/:path*.svg" },
+    { "source": "/:path*.ico",  "destination": "/:path*.ico" },
+    { "source": "/:path*.woff", "destination": "/:path*.woff" },
+    { "source": "/:path*.woff2","destination": "/:path*.woff2" },
+
+    { "source": "/manifest.webmanifest", "destination": "/manifest.webmanifest" },
+    { "source": "/service-worker.js",    "destination": "/service-worker.js" },
+    { "source": "/robots.txt",           "destination": "/robots.txt" },
+    { "source": "/sitemap.xml",          "destination": "/sitemap.xml" },
+
     { "source": "/:path*", "destination": "/index.html" }
   ],
   "headers": [
