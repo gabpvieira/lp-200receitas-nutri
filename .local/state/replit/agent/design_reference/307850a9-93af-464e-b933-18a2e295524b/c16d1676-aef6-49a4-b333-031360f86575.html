@@ -1,0 +1,863 @@
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio da Nutri: 200 Receitas de Café da Manhã</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'poppins': ['Poppins', 'sans-serif'],
+                },
+                colors: {
+                    'primary-green': '#6b8e5c',
+                    'dark-green': '#2e7d32',
+                    'alert-red': '#d32f2f',
+                    'text-primary': '#222',
+                    'text-secondary': '#555',
+                    'light-bg': '#fafafa',
+                    'dark-footer': '#2e2e2e'
+                },
+                animation: {
+                    'fade-in': 'fadeIn 0.8s ease-in-out',
+                    'slide-up': 'slideUp 0.6s ease-out',
+                    'float': 'float 6s ease-in-out infinite',
+                }
+            }
+        }
+    }
+    </script>
+    
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideUp {
+            from { transform: translateY(30px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        .cta-button {
+            background: #2e7d32;
+            color: white;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 16px 32px;
+            box-shadow: 0 4px 15px rgba(46, 125, 50, 0.3);
+            transition: all 0.3s ease;
+            display: inline-block;
+            text-decoration: none;
+        }
+        
+        .cta-button:hover {
+            background: #1b5e20;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+        
+        .recipe-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        @media (max-width: 768px) {
+            .section-padding {
+                padding: 60px 0;
+            }
+        }
+        
+        .faq-item summary {
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .faq-item summary:hover {
+            color: #2e7d32;
+        }
+        
+        .faq-item[open] summary {
+            color: #2e7d32;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body class="font-poppins">
+
+    <!-- @COMPONENT: Hero Section -->
+    <!-- Section 1 - Hero -->
+    <section class="bg-primary-green text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-green to-dark-green"></div>
+        <div class="container mx-auto px-4 py-20 relative z-10">
+            <div class="text-center max-w-4xl mx-auto animate-fade-in">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                    200 CAFÉS DA MANHÃ<br>
+                    <span class="text-yellow-300">DE NUTRI (COM SABOR)®</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto leading-relaxed opacity-90">
+                    200 receitas práticas e nutritivas para começar o dia com energia, saciedade e muito sabor.
+                </p>
+                <a href="#oferta" class="cta-button text-lg mb-12 inline-block">
+                    QUERO MEUS CAFÉS DA MANHÃ
+                </a>
+                
+                <!-- Image Gallery -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <!-- Modern breakfast preparation scene with healthy ingredients -->
+                    <div class="animate-float" style="animation-delay: 0s;">
+                        <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/01.webp" 
+                             alt="Receita de café da manhã saudável" 
+                             class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+                    </div>
+                    <!-- Nutritious breakfast bowl with fruits and grains -->
+                    <div class="animate-float" style="animation-delay: 0.5s;">
+                        <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/03.webp" 
+                             alt="Café da manhã nutritivo com frutas" 
+                             class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+                    </div>
+                    <!-- Healthy breakfast spread with various options -->
+                    <div class="animate-float" style="animation-delay: 1s;">
+                        <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/02.webp" 
+                             alt="Variedade de cafés da manhã saudáveis" 
+                             class="rounded-2xl shadow-2xl w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Hero Section -->
+
+    <!-- @COMPONENT: Benefits Section -->
+    <!-- Section 2 - Benefícios -->
+    <section class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 animate-slide-up">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Por que esse cardápio é diferente?
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.1s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Criado por nutricionista</h3>
+                    <p class="text-text-secondary">Receitas desenvolvidas por profissional qualificada</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Mais de 200 opções saudáveis</h3>
+                    <p class="text-text-secondary">Variedade para nunca enjoar das refeições</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.3s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Baixas calorias e sabor de verdade</h3>
+                    <p class="text-text-secondary">Saudável sem abrir mão do prazer</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Preparos em menos de 15 min</h3>
+                    <p class="text-text-secondary">Perfeito para rotinas corridas</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.5s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-1.5 1.5M7 13l-1.5-1.5M17 21a2 2 0 100-4 2 2 0 000 4zm-8 0a2 2 0 100-4 2 2 0 000 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Ingredientes simples e acessíveis</h3>
+                    <p class="text-text-secondary">Encontra tudo no mercado do bairro</p>
+                </div>
+                
+                <div class="text-center p-6 animate-slide-up" style="animation-delay: 0.6s;">
+                    <div class="w-16 h-16 bg-primary-green rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-2">Perfeito para toda família</h3>
+                    <p class="text-text-secondary">Receitas que agradam crianças e adultos</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#oferta" class="cta-button">QUERO COMEÇAR AGORA</a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Benefits Section -->
+
+    <!-- @COMPONENT: Recipe Gallery Section -->
+    <!-- Section 3 - Galeria de Receitas -->
+    <section class="bg-light-bg section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Descubra Algumas das Receitas Inclusas
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- @MAP: recipes.map(recipe => ( -->
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/OMELETE.webp" 
+                         alt="Omelete Fit" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Omelete Fit</h3>
+                        <p class="text-text-secondary mb-4">Rápido e cheio de proteínas.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 8 min</span>
+                            <span>🔥 180 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/OVOSFRITOS.webp" 
+                         alt="Ovos Fritos Saudáveis" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Ovos Fritos Saudáveis</h3>
+                        <p class="text-text-secondary mb-4">Versão leve e prática.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 5 min</span>
+                            <span>🔥 150 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/PIZZA-RAPIDA.webp" 
+                         alt="Pizza Fit Rápida" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Pizza Fit Rápida</h3>
+                        <p class="text-text-secondary mb-4">Mata a vontade sem sair da dieta.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 12 min</span>
+                            <span>🔥 210 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/PANQUECA.webp" 
+                         alt="Panqueca Integral" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Panqueca Integral</h3>
+                        <p class="text-text-secondary mb-4">Doce saudável para variar a manhã.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 10 min</span>
+                            <span>🔥 190 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/SALADA-FRUTA.webp" 
+                         alt="Salada de Frutas" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Salada de Frutas</h3>
+                        <p class="text-text-secondary mb-4">Refrescante e cheia de vitaminas.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 6 min</span>
+                            <span>🔥 120 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/SHAKES.webp" 
+                         alt="Shake Proteico" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Shake Proteico</h3>
+                        <p class="text-text-secondary mb-4">Cremoso e nutritivo em segundos.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 3 min</span>
+                            <span>🔥 160 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/PAO-GRATINADO.webp" 
+                         alt="Pão Gratinado" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Pão Gratinado</h3>
+                        <p class="text-text-secondary mb-4">Crosta crocante sem culpa.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 7 min</span>
+                            <span>🔥 200 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/BOLOCANECA.webp" 
+                         alt="Bolo de Caneca" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Bolo de Caneca</h3>
+                        <p class="text-text-secondary mb-4">Quentinho em 2 minutos.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 2 min</span>
+                            <span>🔥 170 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/SANDUICHE.jpg" 
+                         alt="Sanduíche Natural" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Sanduíche Natural</h3>
+                        <p class="text-text-secondary mb-4">Prático e saboroso.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 5 min</span>
+                            <span>🔥 220 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="recipe-card bg-white rounded-2xl overflow-hidden shadow-lg lg:col-span-3 lg:max-w-sm lg:mx-auto">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/BROWIE.jpg" 
+                         alt="Brownie Fit" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Brownie Fit</h3>
+                        <p class="text-text-secondary mb-4">Delícia saudável para matar a vontade de doce.</p>
+                        <div class="flex justify-between text-sm text-primary-green font-medium">
+                            <span>⏱ 15 min</span>
+                            <span>🔥 240 kcal</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- @END_MAP -->
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#oferta" class="cta-button">VER TODAS AS 200 RECEITAS</a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Recipe Gallery Section -->
+
+    <!-- @COMPONENT: Nutritionist Section -->
+    <!-- Section 4 - Sobre a Nutricionista -->
+    <section class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+                <div class="order-2 md:order-1">
+                    <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-6">
+                        Conheça a Nutricionista<br>
+                        <span class="text-primary-green">Maria Aguiar</span>
+                    </h2>
+                    <div class="space-y-4 text-text-secondary leading-relaxed">
+                        <p>
+                            Com mais de 10 anos de experiência em nutrição clínica e funcional, 
+                            Maria Aguiar é especialista em criar receitas que unem saúde e sabor.
+                        </p>
+                        <p>
+                            Seu foco principal é mostrar que comer saudável pode ser prático, 
+                            gostoso e acessível para toda a família.
+                        </p>
+                        <div class="grid grid-cols-1 gap-4 mt-6">
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-green rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium">10+ anos de experiência</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-green rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium">Foco em unir saúde e sabor</span>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="w-8 h-8 bg-primary-green rounded-full flex items-center justify-center mr-3">
+                                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                </div>
+                                <span class="font-medium">Mais de 5.000 clientes impactados</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="#oferta" class="cta-button">QUERO AS RECEITAS DA MARIA</a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2">
+                    <img src="https://i.postimg.cc/bw6n6fnp/NUTRI.webp" 
+                         alt="Nutricionista Maria Aguiar" 
+                         class="rounded-2xl shadow-2xl w-full max-w-md mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Nutritionist Section -->
+
+    <!-- @COMPONENT: Bonus Section -->
+    <!-- Section 5 - Bônus Exclusivos -->
+    <section class="bg-light-bg section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Bônus Exclusivos para Você
+                </h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">
+                    Ao adquirir o Cardápio da Nutri, você ainda recebe materiais extras para potencializar seus resultados.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg recipe-card">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus1.webp" 
+                         alt="Guia de Lanches Saudáveis" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="w-12 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-xs font-bold text-white">BÔNUS</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Guia de Lanches Saudáveis</h3>
+                        <p class="text-text-secondary">Receitas práticas e rápidas para manter a dieta no dia a dia.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg recipe-card">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus2.webp" 
+                         alt="Cardápio Semanal Planejado" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="w-12 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-xs font-bold text-white">BÔNUS</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Cardápio Semanal Planejado</h3>
+                        <p class="text-text-secondary">Sugestão completa de cardápio para organizar suas refeições.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-2xl overflow-hidden shadow-lg recipe-card">
+                    <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/bonus3.webp" 
+                         alt="Lista de Compras Inteligente" 
+                         class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="w-12 h-8 bg-yellow-400 rounded-lg flex items-center justify-center mb-4">
+                            <span class="text-xs font-bold text-white">BÔNUS</span>
+                        </div>
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Lista de Compras Inteligente</h3>
+                        <p class="text-text-secondary">Facilite sua vida no mercado comprando apenas o necessário.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#oferta" class="cta-button">QUERO TODOS OS BÔNUS</a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Bonus Section -->
+
+    <!-- @COMPONENT: Benefits Section -->
+    <!-- Section 6 - Vantagens -->
+    <section class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    O que você vai ganhar com esse cardápio?
+                </h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-dark-green rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary">Economia de tempo</h3>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-dark-green rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary">Variedade de opções</h3>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-dark-green rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary">Aprovação da família</h3>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-dark-green rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary">Energia e disposição</h3>
+                </div>
+                
+                <div class="text-center p-6">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary-green to-dark-green rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary">Feito por nutricionista</h3>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#oferta" class="cta-button">QUERO TODAS ESSAS VANTAGENS</a>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Benefits Section -->
+
+    <!-- @COMPONENT: Testimonials Section -->
+    <!-- Section 7 - Depoimentos -->
+    <section class="bg-primary-green section-padding relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-green to-dark-green"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">
+                    Mais de 5.427 pessoas já adquiriram
+                </h2>
+                <p class="text-white/80 text-lg">Veja o que estão falando sobre o Cardápio da Nutri</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="recipe-card">
+                    <img src="https://i.postimg.cc/YCV6rwC8/whats-2.webp" 
+                         alt="Depoimento de cliente satisfeita" 
+                         class="rounded-2xl shadow-2xl w-full">
+                </div>
+                <div class="recipe-card">
+                    <img src="https://i.postimg.cc/mrHQh6c4/instadp.webp" 
+                         alt="Feedback positivo no Instagram" 
+                         class="rounded-2xl shadow-2xl w-full">
+                </div>
+                <div class="recipe-card">
+                    <img src="https://i.postimg.cc/Z50Pzq4C/whatsas1.webp" 
+                         alt="Mensagem de agradecimento" 
+                         class="rounded-2xl shadow-2xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Testimonials Section -->
+
+    <!-- @COMPONENT: Offer Section -->
+    <!-- Section 8 - Oferta Premium -->
+    <section id="oferta" class="bg-primary-green section-padding relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-primary-green to-dark-green"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white rounded-3xl p-8 md:p-12 shadow-2xl">
+                    <div class="text-center mb-8">
+                        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                            🔥 OFERTA ESPECIAL
+                        </h2>
+                        <p class="text-text-secondary text-lg">
+                            Transforme seus cafés da manhã agora mesmo!
+                        </p>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 items-center">
+                        <div>
+                            <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/mockup.webp" 
+                                 alt="Cardápio da Nutri - Mockup do produto" 
+                                 class="w-full max-w-sm mx-auto">
+                        </div>
+                        
+                        <div class="text-center md:text-left">
+                            <div class="mb-6">
+                                <p class="text-text-secondary text-lg line-through mb-2">De R$49,90</p>
+                                <div class="text-5xl font-bold text-alert-red mb-2">
+                                    R$24,90
+                                </div>
+                                <p class="text-text-secondary text-sm mb-2">à vista</p>
+                                <p class="text-dark-green font-semibold">ou 5x de R$4,98</p>
+                            </div>
+                            
+                            <div class="space-y-4">
+                                <a href="https://nucleosaudavel.pay.yampi.com.br/r/Q4S7ZK1U0Q" 
+                                   target="_blank" 
+                                   class="cta-button block text-center text-lg py-4 animate-pulse">
+                                    🛒 COMPRAR AGORA
+                                </a>
+                                
+                                <div class="flex items-center justify-center gap-4">
+                                    <img src="https://cdn.awsli.com.br/1845/1845902/arquivos/jdbstpx.png" 
+                                         alt="Mercado Pago - Pagamento Seguro" 
+                                         class="h-8">
+                                </div>
+                                
+                                <p class="text-xs text-text-secondary text-center">
+                                    ✅ Compra 100% segura • ⭐ Garantia de 7 dias • 🔥 Oferta válida hoje
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Offer Section -->
+
+    <!-- @COMPONENT: Guarantee Section -->
+    <!-- Section 9 - Garantia -->
+    <section class="bg-light-bg section-padding">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div>
+                        <img src="https://nucleosaudavel.com/wp-content/uploads/2025/08/garantia.png" 
+                             alt="Garantia de 7 dias" 
+                             class="w-full max-w-sm mx-auto">
+                    </div>
+                    <div class="text-left">
+                        <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-6">
+                            Garantia de<br>
+                            <span class="text-dark-green">7 Dias</span>
+                        </h2>
+                        <p class="text-text-secondary text-lg leading-relaxed mb-6">
+                            Você tem <strong class="text-dark-green">7 dias</strong> para testar todas as receitas sem risco. 
+                            Se por qualquer motivo você não ficar satisfeita, 
+                            devolvemos 100% do seu dinheiro.
+                        </p>
+                        <div class="flex items-center text-dark-green font-medium">
+                            <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                            <span>Risco zero para você!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: Guarantee Section -->
+
+    <!-- @COMPONENT: FAQ Section -->
+    <!-- Section 10 - FAQ -->
+    <section class="bg-white section-padding">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-text-primary mb-4">
+                    Dúvidas Frequentes
+                </h2>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- @STATE: faqOpen:boolean[] = Array(8).fill(false) -->
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        Como recebo o material?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Após a confirmação do pagamento, você receberá o material completo por e-mail em formato PDF, 
+                        pronto para download e impressão.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        As receitas têm sabor de verdade?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Sim! Todas as receitas foram desenvolvidas priorizando o sabor sem abrir mão da saúde. 
+                        Você não vai sentir que está fazendo "comida de dieta".
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        São realmente saudáveis?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Absolutamente! Todas as receitas foram criadas por uma nutricionista com mais de 10 anos de experiência, 
+                        seguindo critérios científicos de nutrição.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        Servem para a família toda?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Sim! As receitas foram pensadas para agradar adultos e crianças, 
+                        facilitando a rotina da família inteira.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        São fáceis de fazer?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Muito fáceis! Todas as receitas podem ser preparadas em até 15 minutos, 
+                        com instruções passo a passo muito claras.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        Preciso saber cozinhar?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Não é necessário! As receitas são tão simples que até quem não tem experiência na cozinha 
+                        consegue fazer sem problemas.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        Os ingredientes são acessíveis?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Sim! Todos os ingredientes são fáceis de encontrar em qualquer mercado e têm preços acessíveis. 
+                        Nada de ingredientes caros ou difíceis de achar.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-light-bg rounded-xl p-6 shadow-sm">
+                    <summary class="text-lg font-semibold text-text-primary cursor-pointer">
+                        Preciso de utensílios especiais?
+                    </summary>
+                    <div class="mt-4 text-text-secondary leading-relaxed">
+                        Não! Todas as receitas podem ser feitas com utensílios básicos que você já tem em casa: 
+                        panela, frigideira, liquidificador, etc.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQ Section -->
+
+    <!-- @COMPONENT: Footer -->
+    <!-- Rodapé -->
+    <footer class="bg-dark-footer text-white py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-2xl mx-auto">
+                <p class="text-white/80 mb-4">
+                    © 2025 Cardápio da Nutri – Todos os direitos reservados
+                </p>
+                <div class="flex justify-center space-x-6 text-sm text-white/60">
+                    <a href="#" class="hover:text-white transition-colors" data-mock="true">Política de Privacidade</a>
+                    <span>|</span>
+                    <a href="#" class="hover:text-white transition-colors" data-mock="true">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <script>
+        // Smooth scrolling for anchor links
+        (function() {
+            const links = document.querySelectorAll('a[href^="#"]');
+            
+            links.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Add animation on scroll
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            // Observe elements for scroll animations
+            const animatedElements = document.querySelectorAll('.animate-slide-up, .recipe-card');
+            animatedElements.forEach(el => {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                observer.observe(el);
+            });
+        })();
+    </script>
+
+</body>
+</html>
