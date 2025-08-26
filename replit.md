@@ -4,6 +4,13 @@ This is a React/Express.js nutritionist landing page application for selling a d
 
 The project uses a full-stack TypeScript architecture with React frontend and Express backend, though the current implementation focuses primarily on the frontend landing page with minimal backend functionality.
 
+## Recent Changes
+- **UTMfy Pixel Integration (January 26, 2025)**: Successfully implemented and tested UTMfy tracking pixel with ID "68a94d581eb2a94462b2e9d5"
+  - Added manual pageview tracking for SPA compatibility
+  - Implemented cross-domain iframe support
+  - Created production-ready version with optimized tracking
+  - Generated deploy-ready files with clean, minified tracking code
+
 # User Preferences
 
 Preferred communication style: Simple, everyday language.

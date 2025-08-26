@@ -1,5 +1,5 @@
 {
-  "name": "Manual da Nutri: 200 Receitas Rápidas",
+  "name": "Manual da Nutri: 200 Receitas Rápidas de Café da Manhã",
   "short_name": "Manual da Nutri",
   "description": "200 receitas rápidas e saborosas para café da manhã criadas por nutricionista especializada",
   "start_url": "/",
@@ -7,19 +7,20 @@
   "background_color": "#6b8e5c",
   "theme_color": "#6b8e5c",
   "orientation": "portrait-primary",
-  "scope": "/",
+  "categories": ["health", "food", "lifestyle"],
+  "lang": "pt-BR",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "sizes": "16x16 32x32 48x48",
-      "type": "image/x-icon"
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDE5MiAxOTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIxOTIiIGhlaWdodD0iMTkyIiByeD0iNDAiIGZpbGw9IiM2YjhlNWMiLz4KPHBhdGggZD0iTTQ4IDgwaDI0djEySUQ4OHYtMTJ6bTAgMjRoNDh2MTJINDA4di0xMnptMCAyNGgzNnYxMkg0OHYtMTJ6IiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4K",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
     },
     {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
-      "type": "image/png"
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSI1MTIiIGhlaWdodD0iNTEyIiByeD0iMTAwIiBmaWxsPSIjNmI4ZTVjIi8+CjxwYXRoIGQ9Ik0xMjggMjAwaDY0djMySDEyOHYtMzJ6bTAgNjRoMTI4djMySU0xMjh2LTMyem0wIDY0aDk2djMySU0xMjh2LTMyeiIgZmlsbD0id2hpdGUiLz4KPHN2Zz4K",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any"
     }
-  ],
-  "categories": ["food", "health", "lifestyle"],
-  "lang": "pt-BR"
+  ]
 }
