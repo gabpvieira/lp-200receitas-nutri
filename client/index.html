@@ -83,12 +83,46 @@ body{font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sa
         crossDomainTracking: true
       };
       
+      // Função para disparar pageview manual
+      window.utmifyTrackPageview = function() {
+        console.log('Disparando pageview manual para UTMfy');
+        if (typeof utmify !== 'undefined' && utmify.track) {
+          utmify.track('PageView', {
+            page_title: document.title,
+            page_url: window.location.href,
+            timestamp: new Date().toISOString()
+          });
+          console.log('PageView enviado via utmify.track');
+        } else if (typeof fbq !== 'undefined') {
+          // Fallback para API do Meta Pixel se disponível
+          fbq('track', 'PageView');
+          console.log('PageView enviado via fbq fallback');
+        } else {
+          // Dispara evento customizado como fallback
+          if (window.dataLayer) {
+            window.dataLayer.push({
+              'event': 'page_view',
+              'page_title': document.title,
+              'page_location': window.location.href
+            });
+          }
+          console.log('PageView enviado via dataLayer');
+        }
+      };
+      
       // Script do pixel com configuração cross-domain
       var a = document.createElement("script");
       a.setAttribute("async", "");
       a.setAttribute("defer", "");
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       a.onload = function() {
+        console.log('Script UTMfy carregado com sucesso');
+        
+        // Dispara pageview após carregamento
+        setTimeout(function() {
+          window.utmifyTrackPageview();
+        }, 1000);
+        
         // Configura comunicação cross-domain após carregamento
         if (window.utmifyInIframe && window.parent !== window) {
           try {
